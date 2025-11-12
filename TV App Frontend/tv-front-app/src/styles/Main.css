@@ -1,0 +1,11 @@
+:root {
+  --main-bg-color: #640D5F; /* example background color */
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,26 +1,14 @@
 import React from 'react';
 import EpisodeData from './EpisodeData';
+import '../styles/Body.css';
 const Body = () => {
     return (
-        <div>
+        <div className='body-container'>
             <EpisodeData />
+            <button onClick={() => window.location.reload()}>Get Another Episode</button>
         </div>
     );
 };
 
-const styles = {
-    main: {
-        padding: '1rem',
-        background: '#f4f4f4',
-    },
-    title: {
-        fontSize: '1.5rem',
-        fontWeight: 'bold',
-    },
-    description: {
-        fontSize: '1rem',
-        color: '#666',
-    },
-};
 
 export default Body;

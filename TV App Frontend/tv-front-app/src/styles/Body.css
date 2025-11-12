@@ -1,0 +1,29 @@
+button {
+    margin: 20px;;
+    padding: 20px 20px;
+    font-size: 16px;
+    background-color: #FFB200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+}
+
+.body-container {
+    color: #FFB200;
+    font-family: "Verdana", monospace;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.episode-data {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+}

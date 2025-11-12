@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/EpisodeData.css';
 
 function EpisodeData() {
     const [episode, setEpisode] = useState(null);
@@ -38,14 +39,14 @@ function EpisodeData() {
     
     //render episode data
     return (
-        <div>
+        <div className="episode-data">
             <h2>{episode.show}</h2>
             <h3>S{episode.season}E{episode.episode_number}: {episode.episode_title}</h3>
             <p>Watch Period: {episode.watch_period}</p>
-            <img src={episode.image} alt={`${episode.episode_title} Poster`} style={{width: '200px'}} />
+            <img src={episode.image} alt={`${episode.episode_title} Poster`} style={{width: '400px'}} />
             <p>Air Date: {dateOut}</p>
             <p>IMDB Rating: {episode.rating}</p>
-            <p>{episode.description}</p>
+            <p className="episode-description">{episode.description}</p>
         </div>
     )
 }
